@@ -14,7 +14,7 @@ const ScanResult = () => {
 
   const fetchReport = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/report/${id}`);
+      const res = await axios.get(`/api/report/${id}`);
       setReport(res.data.data);
     } catch (err) {
       console.error(err);
@@ -25,7 +25,7 @@ const ScanResult = () => {
 
   const handleDownloadPDF = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/report/${id}/pdf`, {
+      const res = await axios.get(`/api/report/${id}/pdf`, {
         responseType: 'blob',
       });
       const url = window.URL.createObjectURL(new Blob([res.data]));

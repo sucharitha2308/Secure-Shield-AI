@@ -17,7 +17,7 @@ const Scanner = () => {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/scan', { targetUrl: url });
+      const res = await axios.post('/api/scan', { targetUrl: url });
       
       // Navigate to results page with report ID
       if (res.data.success) {
