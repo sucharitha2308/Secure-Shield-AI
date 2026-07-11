@@ -95,6 +95,3 @@ OPENAI_API_KEY=your_openai_api_key
 - Deeper OWASP ZAP automated integration
 - Webhook integrations for CI/CD pipelines
 - Team management and multi-tenant capabilities
-
-## License
-MIT License
